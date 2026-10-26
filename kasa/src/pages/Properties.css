@@ -1,0 +1,9 @@
+.logement div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logement h1 {
+    color: #ff6060;
+    font-size: 32px;
+}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Card.css";
+import { Link } from "react-router";
 
 export default function Card() {
   const [logements, setLogements] = useState([]);
@@ -19,10 +20,16 @@ export default function Card() {
   return (
     <div className="cards-container">
       {logements.slice(0, 6).map((logement) => (
+        <Link
+          to={`/logement/${logement.id}`}
+          key={logement.id}
+          className="card"
+        >
         <article className="card" key={logement.id}>
           <img src={logement.cover} alt={logement.title} className="card-img" />
           <h2 className="card-title">{logement.title}</h2>
         </article>
+        </Link>
       ))}
     </div>
   );
