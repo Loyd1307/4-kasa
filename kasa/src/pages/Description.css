@@ -1,0 +1,29 @@
+li {
+    list-style: none;
+}
+
+.tuile-propertie {
+    padding-bottom: 50px;
+}
+
+.tuile-propertie-title {
+    width: 582px;
+    box-sizing: border-box;
+    background-color: #ff6060;
+    border-radius: 10px;
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.tuile-propertie-title p {
+    height: 100%;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
