@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import Header from "./Header";
 import Footer from "./Footer";
 import Collapse from "./Collapse";
+import Rating from "./Rating";
 import "./Properties.css"
 
 export default function Properties() {
@@ -25,28 +26,26 @@ export default function Properties() {
     <Header />
 
     <main className="logement">
-      <img src={logement.cover} alt={logement.title} />
+      <img className="carousel" src={logement.cover} alt={logement.title} />
       <div>
         <h1>{logement.title}</h1>
-        <div>
-            <h2>{logement.host.name}</h2>
-            <img src={logement.host.name} alt={logement.host.name} />
+        <div className="flex-host">
+            <h2>
+              {logement.host.name.split(" ")[0]}
+              <br />
+              {logement.host.name.split(" ")[1]}
+            </h2>
+            <img src={logement.host.picture} alt={logement.host.name} />
         </div>
       </div>
       <p>{logement.location}</p>
       <div>
         <ul>
-            <li>Cozy</li>
+            <li></li>
             <li>Canal</li>
             <li>Paris 10</li>
         </ul>
-        <div className="rating">
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span>☆</span>
-        </div>
+            <Rating note={Number(logement.rating)} />
       </div>
       <div>
         <Collapse />
