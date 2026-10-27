@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Header from "./Header";
 import Footer from "./Footer";
-import Collapse from "./Collapse";
 import Rating from "./Rating";
-import "./Properties.css"
+import Tag from "./Tag";
+import "./Properties.css";
 
 export default function Properties() {
   const { id } = useParams();
@@ -40,15 +40,11 @@ export default function Properties() {
       </div>
       <p>{logement.location}</p>
       <div>
-        <ul>
-            <li></li>
-            <li>Canal</li>
-            <li>Paris 10</li>
-        </ul>
-            <Rating note={Number(logement.rating)} />
+        <Tag tuiles={logement.tags} />
+        <Rating note={Number(logement.rating)} />
       </div>
       <div>
-        <Collapse />
+        
       </div>
 
     </main>
