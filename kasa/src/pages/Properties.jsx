@@ -30,7 +30,10 @@ export default function Properties() {
     <main className="logement">
       <img className="carousel" src={logement.cover} alt={logement.title} />
       <div>
-        <h1>{logement.title}</h1>
+        <div className="properties-info">
+          <h1>{logement.title}</h1>
+          <p>{logement.location}</p>
+        </div>
         <div className="flex-host">
             <h2>
               {logement.host.name.split(" ")[0]}
@@ -40,7 +43,6 @@ export default function Properties() {
             <img src={logement.host.picture} alt={logement.host.name} />
         </div>
       </div>
-      <p>{logement.location}</p>
       <div>
         <Tag tuiles={logement.tags} />
         <Rating note={Number(logement.rating)} />

@@ -10,7 +10,7 @@ export default function Description({ description }) {
   const [descriptionOpen, setDescriptionOpen] = useState(false);
 
   return (
-    <div className="tuile-propertie">
+    <section className="tuile-propertie">
       <div className="tuile-propertie-title">
         <p
           onClick={() => setDescriptionOpen(!descriptionOpen)}
@@ -26,10 +26,10 @@ export default function Description({ description }) {
       </div>
 
       {descriptionOpen && (
-        <div className="collapse-texte">
+        <div className="description-texte">
           {description}
         </div>
       )}
-    </div>
+    </section>
   );
 }

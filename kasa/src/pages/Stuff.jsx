@@ -10,7 +10,7 @@ export default function Stuff({ stuff }) {
   const [stuffOpen, setStuffOpen] = useState(false);
 
   return (
-    <div className="tuile-propertie">
+    <section className="tuile-propertie">
       <div className="tuile-propertie-title">
         <p onClick={() => setStuffOpen(!stuffOpen)}>
           Équipements
@@ -24,7 +24,7 @@ export default function Stuff({ stuff }) {
       </div>
 
       {stuffOpen && (
-        <div className="collapse-texte">
+        <div className="properties-texte">
           <ul>
             {stuff?.map((equipment) => (
               <li className="stuff" key={equipment}>
@@ -34,6 +34,6 @@ export default function Stuff({ stuff }) {
           </ul>
         </div>
       )}
-    </div>
+    </section>
   );
 }
