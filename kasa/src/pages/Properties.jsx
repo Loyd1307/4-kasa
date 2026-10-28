@@ -6,6 +6,7 @@ import Rating from "./Rating";
 import Tag from "./Tag";
 import Description from "./Description";
 import Stuff from "./Stuff";
+import Carousel from "./Slideshow";
 import "./Properties.css";
 
 export default function Properties() {
@@ -45,7 +46,9 @@ export default function Properties() {
     <Header />
 
     <main className="logement">
-      <img className="carousel" src={logement.cover} alt={logement.title} />
+      {logement && (
+  <Carousel pictures={logement.pictures} />
+)}
       <div>
         <div className="properties-info">
           <h1>{logement.title}</h1>
