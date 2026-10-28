@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import Header from "./Header";
 import Footer from "./Footer";
 import Rating from "./Rating";
@@ -11,15 +11,32 @@ import "./Properties.css";
 export default function Properties() {
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
+  const navigate = useNavigate();
 
    useEffect(() => {
-    fetch(`http://localhost:8080/api/properties/${id}`)
-      .then((response) => response.json())
-      .then((data) => setLogement(data));
-  }, [id]);
+  fetch(`http://localhost:8080/api/properties/${id}`)
+    .then((response) => {
+      if (response.status === 404) {
+        navigate("/not-found");
+        return null;
+      }
 
-  if (!logement) {
-    return <p>Chargement du logement...</p>;
+      if (!response.ok) {
+        throw new Error("Erreur lors de la récupération");
+      }
+
+      return response.json();
+    })
+    .then((data) => {
+      if (data) {
+        setLogement(data);
+      }
+    })
+    .catch((error) => console.error(error));
+}, [id, navigate]);
+
+ if (!logement) {
+    return <p>Chargement...</p>;
   }
 
   return (
