@@ -1,5 +1,5 @@
-import Header from "../pages/Header"
-import Footer from "./Footer"
+import Header from "./Header.jsx"
+import Footer from "./Footer.jsx"
 import Logo2 from "../assets/IMG-ABOUT.png"
 import "./About.css"
 import Collapse from "./Collapse.jsx"
