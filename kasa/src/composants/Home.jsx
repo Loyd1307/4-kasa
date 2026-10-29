@@ -1,7 +1,7 @@
 import Card from "./Card";
 import Header from "./Header";
 import Footer from "./Footer";
-import "./Home.css";
+import "./Home.scss";
 
 export default function Home() {
   return ( 

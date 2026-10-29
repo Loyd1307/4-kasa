@@ -7,7 +7,7 @@ import Tag from "./Tag";
 import Description from "./Description";
 import Stuff from "./Stuff";
 import Carousel from "./Slideshow";
-import "./Properties.css";
+import "./Properties.scss";
 
 export default function Properties() {
   const { id } = useParams();

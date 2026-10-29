@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 45px;
+  margin-inline: 100px;
+}
+
+nav {
+  display: flex;
+  gap: 57px;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+  }
+}
+
+.logo {
+  width: 210px;
+}

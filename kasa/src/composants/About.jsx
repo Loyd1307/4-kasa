@@ -1,7 +1,7 @@
 import Header from "./Header.jsx"
 import Footer from "./Footer.jsx"
 import Logo2 from "../assets/IMG-ABOUT.png"
-import "./About.css"
+import "./About.scss"
 import Collapse from "./Collapse.jsx"
 
 function About() {

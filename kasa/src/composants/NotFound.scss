@@ -1,3 +1,5 @@
+$error-color: #FF6060;
+
 .error-image {
   width: 600px;
   height: auto;
@@ -8,15 +10,15 @@
 .error-text {
   text-align: center;
   font-size: 24px;
-  color: #FF6060;
+  color: $error-color;
   margin-bottom: 150px;
 }
 
 .error-link {
   text-align: center;
   margin-bottom: 150px;
-}
 
-.error-link a {
+  a {
     color: inherit;
+  }
 }

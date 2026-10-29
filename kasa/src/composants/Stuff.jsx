@@ -4,7 +4,7 @@ import {
   faChevronDown,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-import "./Description.css"
+import "./Description.scss"
 
 export default function Stuff({ stuff }) {
   const [stuffOpen, setStuffOpen] = useState(false);

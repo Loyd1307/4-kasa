@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import "./NotFound.css";
+import "./NotFound.scss";
 import NotFoundImage from "../assets/404.png";
 
 export default function NotFound() {

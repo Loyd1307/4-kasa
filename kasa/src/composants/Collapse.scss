@@ -1,0 +1,38 @@
+$primary-color: #ff6060;
+$text-color: white;
+
+.collapse {
+  display: grid;
+  gap: 20px;
+  max-width: 1023px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+  &-container {
+    margin-bottom: 20px;
+  }
+
+  &-title {
+    height: 52px;
+    box-sizing: border-box;
+    background-color: $primary-color;
+    border-radius: 5px;
+    color: $text-color;
+    font-size: 24px;
+
+    p {
+      height: 100%;
+      margin: 0;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+  }
+
+  &-texte {
+    margin: 15px 0 0;
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,19 @@
+$primary-color: #FF6060;
+$text-color: white;
+
+.about-logo {
+  height: 223px;
+  border-radius: 25px;
+  width: 100%;
+  object-fit: cover;
+  margin-block: 50px;
+}
+
+.about-container {
+  margin-inline: 100px;
+  margin-block: 50px;
+  background-color: $primary-color;
+  color: $text-color;
+  border-radius: 25px;
+  padding: 10px;
+}

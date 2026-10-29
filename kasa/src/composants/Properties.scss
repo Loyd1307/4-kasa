@@ -1,0 +1,74 @@
+$primary-color: #ff6060;
+$text-color: white;
+
+.logement {
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    color: $primary-color;
+    font-size: 36px;
+    margin: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.properties-info {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.carousel {
+  width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.flex-host {
+  color: $primary-color;
+  font-size: 18px;
+  gap: 10px;
+
+  h2 {
+    display: flex;
+    text-align: right;
+  }
+
+  img {
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.rating {
+  display: flex;
+  gap: 10px;
+}
+
+.flex-tag {
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tag {
+  min-width: 115px;
+  height: 25px;
+  background-color: $primary-color;
+  border-radius: 25px;
+  padding-top: 5px;
+  padding-inline: 5px;
+  color: $text-color;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+}

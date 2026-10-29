@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Card.css";
+import "./Card.scss";
 import { Link } from "react-router";
 
 export default function Card() {
