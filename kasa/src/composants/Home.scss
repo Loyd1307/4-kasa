@@ -2,10 +2,19 @@
   max-width: 1440px;
   font-size: 18px;
   font-family: "montserrat", sans-serif;
+
+  @media (max-width: 375px) {
+    max-width: 375px;
+  }
 }
 
 main {
   margin-inline: 100px;
+
+  @media (max-width: 375px) {
+    margin-inline: 20px;
+    width: 375px;
+  }
 }
 
 .home-title {
@@ -21,5 +30,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+
+  @media (max-width: 375px) {
+    width: 335px;
+    height: 111px;
+    font-size: 24px;
+    padding-inline: 10px;
+    box-sizing: border-box;
+  }
 }
 

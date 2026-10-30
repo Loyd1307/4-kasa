@@ -1,5 +1,6 @@
 $cards-background: #F6F6F6;
 $card-size: 340px;
+$media-card-size: 335px;
 
 .cards-container {
   display: grid;
@@ -8,6 +9,13 @@ $card-size: 340px;
   background-color: $cards-background;
   padding: 50px;
   margin-bottom: 50px;
+
+  @media (max-width: 375px) {
+    grid-template-columns: repeat(1, 375px);
+    padding: 0px;
+    gap: 22px;
+    background-color: none;
+  }
 }
 
 .card {
@@ -15,6 +23,11 @@ $card-size: 340px;
   height: $card-size;
   position: relative;
   border-radius: 8px;
+
+  @media (max-width: 375px) {
+    width: $media-card-size;
+    height: 255px;
+  }
 
   .card-title {
     margin: 0;

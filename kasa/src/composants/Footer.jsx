@@ -1,9 +1,12 @@
-import footer from "../assets/footer-desktop.png"
+import footerDesk from "../assets/footer-desktop.png"
+import footerMobile from "../assets/footer-mobile.png"
+import "./Footer.scss"
 
 export default function Footer() {
   return (
     <footer>
-      <img src={footer} alt="Logo Kasa" />
+      <img className="footer-desk" src={footerDesk} alt="Logo Kasa" />
+      <img className="footer-mobile" src={footerMobile} alt="Logo Kasa" />
     </footer>
   )
 }
