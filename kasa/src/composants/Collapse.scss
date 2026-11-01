@@ -5,11 +5,11 @@ $text-color: white;
   display: grid;
   gap: 20px;
   max-width: 1023px;
-  margin: 0 auto;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
-  &-container {
-    margin-bottom: 20px;
+  @media (max-width: 375px) {
+    max-width: 335px;
+    padding: 0;
   }
 
   &-title {
@@ -20,6 +20,11 @@ $text-color: white;
     color: $text-color;
     font-size: 24px;
 
+    @media (max-width: 375px) {
+    max-width: 335px;
+    height: 30px;
+  }
+
     p {
       height: 100%;
       margin: 0;
@@ -28,11 +33,19 @@ $text-color: white;
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
+
+      @media (max-width: 375px) {
+        font-size: 13px;
+      }
     }
   }
 
   &-texte {
     margin: 15px 0 0;
     padding: 0 20px;
+
+    @media (max-width: 375px) {
+        font-size: 13px;
+      }
   }
 }
