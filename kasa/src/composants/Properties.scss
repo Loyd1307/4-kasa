@@ -11,10 +11,18 @@ $text-color: white;
     color: $primary-color;
     font-size: 36px;
     margin: 0;
+
+    @media (max-width: 375px) {
+    font-size: 18px;
+    }
   }
 
   p {
     margin-top: 0;
+
+    @media (max-width: 375px) {
+    font-size: 14px;
+    }
   }
 }
 
@@ -30,6 +38,12 @@ $text-color: white;
   margin-top: 50px;
   margin-bottom: 20px;
   object-fit: cover;
+
+  @media (max-width: 375px) {
+    width: 335px;
+    height: 255px;
+    margin-top: 20px;
+  }
 }
 
 .flex-host {
