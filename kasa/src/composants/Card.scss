@@ -11,7 +11,7 @@ $media-card-size: 335px;
   margin-bottom: 50px;
 
   @media (max-width: 375px) {
-    grid-template-columns: repeat(1, 375px);
+    grid-template-columns: repeat(1, $media-card-size);
     padding: 0px;
     gap: 22px;
     background-color: white;
@@ -19,7 +19,7 @@ $media-card-size: 335px;
 }
 
 .card {
-  width: $card-size;
+  width: 100%;
   height: $card-size;
   position: relative;
   border-radius: 8px;
