@@ -21,7 +21,7 @@ export default function Collapse({ titre, children }) {
       </button>
 
       {isOpen && (
-        <div className="collapse">
+        <div className="collapse-inner">
           {children}
         </div>
       )}
