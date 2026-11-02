@@ -7,10 +7,11 @@ export default function Collapse({ titre, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="collapse">
+    <div className={`collapse ${isOpen ? "open" : ""}`}>
       <button
         className="collapse-title"
         onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
       >
         {titre}
 
@@ -20,11 +21,13 @@ export default function Collapse({ titre, children }) {
         />
       </button>
 
-      {isOpen && (
+      <div className="collapse-content">
         <div className="collapse-inner">
-          {children}
+          <div className="collapse-text">
+            {children}
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }
