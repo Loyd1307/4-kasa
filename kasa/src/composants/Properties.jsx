@@ -50,23 +50,33 @@ export default function Properties() {
   <Carousel pictures={logement.pictures} />
 )}
       <div className="logement-flex">
-        <div className="properties-info">
-          <h1>{logement.title}</h1>
-          <p>{logement.location}</p>
-        </div>
-        <div className="flex-host">
-            <h2>
-              {logement.host.name.split(" ")[0]}
-              <br />
-              {logement.host.name.split(" ")[1]}
-            </h2>
-            <img src={logement.host.picture} alt={logement.host.name} />
-        </div>
-      </div>
-      <div className="logement-flex">
-        <Tag tuiles={logement.tags} />
-        <Rating note={Number(logement.rating)} />
-      </div>
+  <div className="properties-info">
+    <h1>{logement.title}</h1>
+    <p>{logement.location}</p>
+  </div>
+
+  <div className="flex-host">
+    <h2>
+      {logement.host.name.split(" ")[0]}
+      <br />
+      {logement.host.name.split(" ")[1]}
+    </h2>
+
+    <img
+      src={logement.host.picture}
+      alt={logement.host.name}
+    />
+  </div>
+
+  <div className="logement-tags">
+    <Tag tuiles={logement.tags} />
+  </div>
+
+  <div className="logement-rating">
+    <Rating note={Number(logement.rating)} />
+  </div>
+</div>
+       
       <div className="collapse-properties">
         <Collapse 
         titre="Description"

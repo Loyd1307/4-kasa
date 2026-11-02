@@ -5,7 +5,8 @@ $text-color: #ffffff;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 
   @media (max-width: 375px) {
     max-width: 335px;

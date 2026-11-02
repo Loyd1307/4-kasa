@@ -9,6 +9,10 @@ ul {
 
 li {
   list-style: none;
+
+  @media (max-width: 375px) {
+    font-size: 13px;
+  }
 }
 
 button {
@@ -92,7 +96,7 @@ button {
     }
   }
 
-  &-texte {
+  &-text {
     margin: 15px 0 0;
     padding: 0 20px;
 
@@ -110,6 +114,13 @@ button {
   display: flex;
   gap: 76px;
   padding-bottom: 50px;
+
+  @media (max-width: 375px) {
+    width: 335px;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .collapse-property {
