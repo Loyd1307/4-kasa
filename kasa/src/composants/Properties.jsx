@@ -4,9 +4,9 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Rating from "./Rating";
 import Tag from "./Tag";
-import Description from "./Description";
-import Stuff from "./Stuff";
 import Carousel from "./Slideshow";
+import Collapse from "./Collapse";
+import "./Collapse.scss";
 import "./Properties.scss";
 
 export default function Properties() {
@@ -68,8 +68,15 @@ export default function Properties() {
         <Rating note={Number(logement.rating)} />
       </div>
       <div>
-        <Description description={logement.description} />
-        <Stuff stuff={logement.equipments} />
+        <Collapse titre="Description">
+        <p>{logement.description}</p>
+        </Collapse>
+
+        <Collapse titre="Équipements">
+        <ul> {logement.equipments.map((equipment) => (
+          <li key={equipment}>{equipment}</li>
+        ))}</ul>
+        </Collapse>
       </div>
 
     </main>

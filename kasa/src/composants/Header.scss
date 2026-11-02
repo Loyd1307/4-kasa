@@ -4,13 +4,13 @@ header {
   align-items: center;
   padding-top: 45px;
   margin-inline: 100px;
-  width: 100%;
 
   @media (max-width: 375px) {
     margin-inline: 20px;
     justify-content: left;
     padding-top: 20px;
     gap: 30px;
+    width: 100%;
   }
 }
 

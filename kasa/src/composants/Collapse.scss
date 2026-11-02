@@ -1,11 +1,23 @@
 $primary-color: #ff6060;
 $text-color: white;
+$property-width: 582px;
+
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 .collapse {
-  display: grid;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
   max-width: 1023px;
-  margin-bottom: 50px;
+  
 
   @media (max-width: 375px) {
     max-width: 335px;
@@ -13,12 +25,16 @@ $text-color: white;
   }
 
   &-title {
-    height: 52px;
     box-sizing: border-box;
     background-color: $primary-color;
-    border-radius: 5px;
+    border-radius: 10px;
     color: $text-color;
-    font-size: 24px;
+    height: 52px;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     @media (max-width: 375px) {
     max-width: 335px;
@@ -26,13 +42,13 @@ $text-color: white;
   }
 
     p {
-      height: 100%;
-      margin: 0;
       padding: 0 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
+      width: 100%;
+      height: 100%;
 
       @media (max-width: 375px) {
         font-size: 13px;
@@ -48,4 +64,12 @@ $text-color: white;
         font-size: 13px;
       }
   }
+}
+
+.arrow {
+  transition: transform 0.5s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
 }
