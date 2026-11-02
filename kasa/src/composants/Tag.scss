@@ -4,12 +4,14 @@ $text-color: #ffffff;
 .flex-tag {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
   margin-bottom: 20px;
   margin-top: 10px;
+  flex-wrap: wrap;
+  width: 100%;
 
   @media (max-width: 375px) {
-    max-width: 335px;
+    width: 335px;
+    gap: 5px;
     padding: 0;
     margin: 0;
   }
@@ -25,6 +27,7 @@ $text-color: #ffffff;
   text-align: center;
   font-size: 14px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 
   @media (max-width: 375px) {
     min-width: 84px;

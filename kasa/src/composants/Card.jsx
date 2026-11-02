@@ -19,7 +19,7 @@ export default function Card() {
 
   return (
     <div className="cards-container">
-      {logements.slice(0, 6).map((logement) => (
+      {logements.map((logement) => (
         <Link
           to={`/logement/${logement.id}`}
           key={logement.id}
