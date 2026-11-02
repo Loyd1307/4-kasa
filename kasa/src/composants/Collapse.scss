@@ -74,6 +74,7 @@ button {
     @media (max-width: 375px) {
     max-width: 335px;
     height: 30px;
+    font-size: 13px;
   }
 
     p {
@@ -97,6 +98,8 @@ button {
 
     @media (max-width: 375px) {
         font-size: 13px;
+        margin: 0;
+        padding: 0;
       }
   }
 }
