@@ -5,15 +5,14 @@ $text-color: white;
   &-flex {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: 50px;
   gap: 20px;
 
-    @media (max-width: 375px) {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 15px;
-    }
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
+}
 
   .logement-tags {
   grid-column: 1;
@@ -48,10 +47,15 @@ $text-color: white;
 
   p {
     margin: 0;
+  }
+}
 
-    @media (max-width: 375px) {
+.logement-location {
+  font-size: 18px;
+  margin: 0;
+
+  @media (max-width: 375px) {
     font-size: 14px;
-    }
   }
 }
 
@@ -83,11 +87,13 @@ $text-color: white;
 
 .flex-host {
   display: flex;
+  justify-content: right;
   color: $primary-color;
   font-size: 18px;
   gap: 10px;
   grid-column: 2;
   grid-row: 1;
+  margin-bottom: 20px;
 
   @media (max-width: 375px) {
     grid-column: 2;
@@ -97,11 +103,21 @@ $text-color: white;
   h2 {
     display: flex;
     text-align: right;
+
+    @media (max-width: 375px) {
+    font-size: 12px;
+    margin: 0;
+    }
   }
 
   img {
     border-radius: 100%;
     width: 64px;
     height: 64px;
+
+    @media (max-width: 375px) {
+    width: 32px;
+    height: 32px;
+    }
   }
 }

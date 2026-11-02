@@ -52,7 +52,7 @@ export default function Properties() {
       <div className="logement-flex">
   <div className="properties-info">
     <h1>{logement.title}</h1>
-    <p>{logement.location}</p>
+    <p className="logement-location">{logement.location}</p>
   </div>
 
   <div className="flex-host">
