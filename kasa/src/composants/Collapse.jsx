@@ -3,11 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./Collapse.scss";
 
-export default function Collapse({ titre, children }) {
+export default function Collapse({ 
+  titre, 
+  children,
+  variant = "about",
+ }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={`collapse ${isOpen ? "open" : ""}`}>
+    <div className={`collapse collapse-${variant} ${isOpen ? "open" : ""}`}>
       <button
         className="collapse-title"
         onClick={() => setIsOpen(!isOpen)}

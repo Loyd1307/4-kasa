@@ -2,6 +2,10 @@ $primary-color: #ff6060;
 $text-color: white;
 $property-width: 582px;
 
+ul {
+  padding: 0;
+  margin: 0;
+}
 
 li {
   list-style: none;
@@ -27,12 +31,13 @@ button {
   &.open {
     .collapse-content {
       grid-template-rows: 1fr;
+      padding-top: 10px;
     }
 
     .collapse-inner {
       opacity: 1;
       transform: translateY(0);
-      padding: 15px 20px;
+      padding: 5px 15px;
     }
   }
 
@@ -93,6 +98,25 @@ button {
     @media (max-width: 375px) {
         font-size: 13px;
       }
+  }
+}
+
+.collapse-properties {
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  gap: 76px;
+  padding-bottom: 50px;
+}
+
+.collapse-property {
+  width: $property-width;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 375px) {
+    width: 335px;
+    gap: 10px;
   }
 }
 

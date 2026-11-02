@@ -49,7 +49,7 @@ export default function Properties() {
       {logement && (
   <Carousel pictures={logement.pictures} />
 )}
-      <div>
+      <div className="logement-flex">
         <div className="properties-info">
           <h1>{logement.title}</h1>
           <p>{logement.location}</p>
@@ -63,16 +63,22 @@ export default function Properties() {
             <img src={logement.host.picture} alt={logement.host.name} />
         </div>
       </div>
-      <div>
+      <div className="logement-flex">
         <Tag tuiles={logement.tags} />
         <Rating note={Number(logement.rating)} />
       </div>
-      <div>
-        <Collapse titre="Description">
+      <div className="collapse-properties">
+        <Collapse 
+        titre="Description"
+        variant="property">
+
         <p>{logement.description}</p>
         </Collapse>
 
-        <Collapse titre="Équipements">
+        <Collapse
+        titre="Équipements" 
+        variant="property">
+
         <ul> {logement.equipments.map((equipment) => (
           <li key={equipment}>{equipment}</li>
         ))}</ul>

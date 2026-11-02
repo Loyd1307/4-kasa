@@ -1,3 +1,5 @@
+import "./Tag.scss";
+
 export default function Tag({ tuiles }) {
     return (
         <div className="flex-tag">

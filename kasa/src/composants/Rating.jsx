@@ -1,5 +1,6 @@
 import ActiveStar from "../assets/star-active 1.png"
 import InactiveStar from "../assets/star-inactive 1.png"
+import "./Rating.scss"
 
 function Rating({ note }) {
   return (
