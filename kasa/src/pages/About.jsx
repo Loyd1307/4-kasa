@@ -1,8 +1,8 @@
-import Header from "./Header.jsx"
-import Footer from "./Footer.jsx"
+import Header from "../composants/Header.jsx"
+import Footer from "../composants/Footer.jsx"
 import Logo2 from "../assets/IMG-ABOUT.png"
 import "./About.scss"
-import Collapse from "./Collapse.jsx"
+import Collapse from "../composants/Collapse.jsx"
 
 export default function About() {
   const collapse = [

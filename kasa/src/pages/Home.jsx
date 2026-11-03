@@ -1,6 +1,6 @@
-import Card from "./Card";
-import Header from "./Header";
-import Footer from "./Footer";
+import Card from "../composants/Card.jsx";
+import Header from "../composants/Header.jsx";
+import Footer from "../composants/Footer.jsx";
 import "./Home.scss";
 
 export default function Home() {

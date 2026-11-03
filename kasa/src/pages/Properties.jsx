@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router";
-import Header from "./Header";
-import Footer from "./Footer";
-import Rating from "./Rating";
-import Tag from "./Tag";
-import Carousel from "./Slideshow";
-import Collapse from "./Collapse";
-import "./Collapse.scss";
+import Header from "../composants/Header.jsx";
+import Footer from "../composants/Footer.jsx";
+import Rating from "../composants/Rating.jsx";
+import Tag from "../composants/Tag.jsx";
+import Slideshow from "../composants/Slideshow.jsx";
+import Collapse from "../composants/Collapse.jsx";
+import "../composants/Collapse.scss";
 import "./Properties.scss";
 
 export default function Properties() {
@@ -47,7 +47,7 @@ export default function Properties() {
 
     <main className="logement">
       {logement && (
-  <Carousel pictures={logement.pictures} />
+  <Slideshow pictures={logement.pictures} />
 )}
       <div className="logement-flex">
   <div className="properties-info">

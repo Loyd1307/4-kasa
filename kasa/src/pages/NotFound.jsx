@@ -1,5 +1,5 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../composants/Header.jsx";
+import Footer from "../composants/Footer.jsx";
 import "./NotFound.scss";
 import NotFoundImage from "../assets/404.png";
 

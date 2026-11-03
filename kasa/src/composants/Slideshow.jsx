@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Slideshow.scss"
 
-export default function Carousel({ pictures }) {
+export default function Slideshow({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
    if (!pictures || pictures.length === 0) {
