@@ -12,22 +12,14 @@ $text-color: white;
     width: 335px;
     height: 111px;
     margin-block: 20px;
+    border-radius: 15px;
   }
-}
-
-.about-container {
-  margin-inline: 100px;
-  margin-block: 50px;
-  background-color: $primary-color;
-  color: $text-color;
-  border-radius: 25px;
-  padding: 10px;
 }
 
 .collapse-flex {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   max-width: 1023px;
   margin: 0px auto;
   padding-bottom: 50px;

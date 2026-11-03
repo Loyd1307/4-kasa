@@ -9,6 +9,7 @@ $media-card-size: 335px;
   background-color: $cards-background;
   padding: 50px;
   margin-bottom: 50px;
+  border-radius: 25px;
 
   @media (max-width: 375px) {
     grid-template-columns: repeat(1, $media-card-size);
