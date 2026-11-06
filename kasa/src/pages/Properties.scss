@@ -5,6 +5,7 @@ $text-color: white;
   &-flex {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  
 
   @media (max-width: 375px) {
     grid-template-columns: 2fr 1fr;
