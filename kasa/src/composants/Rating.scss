@@ -1,12 +1,18 @@
 .rating {
     display: flex;
     gap: 10px;
+    justify-content: flex-end;
 
     @media (max-width: 375px) {
         display: block;
     }
     
     img{
+
+    @media (max-width: 1024px) {
+        width: 24px;
+    }
+
     @media (max-width: 375px) {
         width: 18px;
     }

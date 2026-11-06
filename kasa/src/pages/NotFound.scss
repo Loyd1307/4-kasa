@@ -6,6 +6,11 @@ $error-color: #FF6060;
   margin: 150px auto;
   display: block;
 
+  @media (max-width: 1024px) {
+    width: 300px;
+    margin: 150px auto;
+  }
+
   @media (max-width: 375px) {
     width: 198px;
     margin: 113px auto;

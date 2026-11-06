@@ -6,7 +6,7 @@ import "./Home.scss";
 export default function Home() {
   return ( 
     <>
-  
+    <div className="home-flex">
     <Header />
   
     <main>
@@ -15,7 +15,7 @@ export default function Home() {
     </main>
   
     <Footer />
-
+    </div>
   </>
   )  
 }

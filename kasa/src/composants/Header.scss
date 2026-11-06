@@ -2,15 +2,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 86%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 45px;
-  margin-inline: 100px;
 
   @media (max-width: 375px) {
-    margin-inline: 20px;
-    justify-content: left;
+    width: calc(100% - 40px);
     padding-top: 20px;
-    gap: 30px;
-    width: 100%;
   }
 }
 
@@ -18,15 +17,23 @@ nav {
   display: flex;
   gap: 40px;
 
+  @media (max-width: 1024px) {
+    gap: 20px;
+  }
+
   @media (max-width: 375px) {
-   width: 42%;
-   justify-content: space-evenly;
+    width: auto;
+    gap: 15px;
   }
 
   a {
     text-decoration: none;
     color: #000;
     font-size: 24px;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
 
     @media (max-width: 375px) {
       font-size: 12px;
@@ -41,6 +48,10 @@ nav {
 
 .logo {
   width: 210px;
+
+  @media (max-width: 1024px) {
+    width: 180px;
+  }
 
   @media (max-width: 375px) {
     width: 145px;

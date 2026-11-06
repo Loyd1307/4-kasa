@@ -80,6 +80,10 @@ button {
     padding-inline: 10px;
     font-size: 24px;
 
+    @media (max-width: 1024px) {
+      font-size: 18px;
+    }
+
     @media (max-width: 375px) {
     max-width: 335px;
     height: 30px;
@@ -119,11 +123,15 @@ button {
 }
 
 .collapse-properties {
-  width: 1240px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   gap: 76px;
   padding-bottom: 50px;
+
+  @media (max-width: 1024px) {
+    gap: 30px;
+  }
 
   @media (max-width: 375px) {
     width: 335px;
